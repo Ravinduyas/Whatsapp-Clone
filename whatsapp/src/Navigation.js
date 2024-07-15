@@ -12,10 +12,24 @@ const Tab = createMaterialTopTabNavigator();
 
 const Navigation = () => {
   return (
-    
-    <View style={styles.container}>
-      <Text>Navigation</Text>
-    </View>
+    <Tab.Navigator>
+      <Tab.Screen
+        name='Community'
+        component={Community}
+      />
+      <Tab.Screen
+        name='Chat'
+        component={Chat}
+      />
+      <Tab.Screen
+        name='Status'
+        component={Status}
+      />
+      <Tab.Screen
+        name='Calls'
+        component={Calls}
+      />
+    </Tab.Navigator>
   )
 }
 
