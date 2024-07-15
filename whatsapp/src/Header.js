@@ -31,5 +31,17 @@ const styles = StyleSheet.create({
     alignItems: 'left',
     justifyContent: 'space-between',
     marginHorizontal: 16
+  },
+  headerText: {
+    fontSize: 20,
+    color: '#cff',
+    fontWeight: '500'
+  },
+  iconContainer: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  icon: {
+    marginLeft: 20,
   }
 });
