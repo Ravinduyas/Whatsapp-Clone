@@ -12,7 +12,22 @@ const Tab = createMaterialTopTabNavigator();
 
 const Navigation = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+    initialRouteName='Chat'
+    screenOptions={{
+      tabBarIndicatorStyle: 'white',
+      tabBarIndicatorStyle:{
+        backgroundColor: 'white'
+      },
+      tabBarLabelStyle: {
+        fontWeight: 'bold'
+      },
+      tabBarStyle: {
+        backgroundColor: '#075e54'
+      }
+      
+    }}
+    >
       <Tab.Screen
         name='Community'
         component={Community}
