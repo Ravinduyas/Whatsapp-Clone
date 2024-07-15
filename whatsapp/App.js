@@ -12,7 +12,7 @@ export default function App() {
         <Header />
 
         <View style={{ flex: 1, backgroundColor: 'white' }}>
-          <Navigation/>
+          <Navigation />
         </View>
 
       </View>
