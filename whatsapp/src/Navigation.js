@@ -59,6 +59,5 @@ export default Navigation
 const styles = StyleSheet.create({
   tabBarLabel: {
     display: 'none',
-    backgroundColor: 'yellow'
   }
 });

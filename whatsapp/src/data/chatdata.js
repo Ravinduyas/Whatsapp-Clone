@@ -2,7 +2,7 @@ const DATA = [
     {
         "id": 1,
         "name": 'Ravindu',
-        "photos": require('../../assets/ravindu.png'),
+        "photos": require('../../assets/flower.png'),
         "lastMessage": "I'm Ravindu",
         "time": "10:00 AM",
         "totalUnread": 2
@@ -79,4 +79,6 @@ const DATA = [
         "time": "05:00 PM",
         "totalUnread": 8
     }
-];
+]
+
+export default DATA

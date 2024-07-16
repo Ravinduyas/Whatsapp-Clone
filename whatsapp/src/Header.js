@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 20,
-    color: '#ccc',
+    color: '#1fC',
     fontWeight: '500'
   },
   iconContainer: {
@@ -43,5 +43,6 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginLeft: 20,
+    color: '#1fC'
   }
 });

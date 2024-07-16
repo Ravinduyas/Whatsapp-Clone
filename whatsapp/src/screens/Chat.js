@@ -19,6 +19,20 @@ const Chat = () => {
         renderItem={(item) => (
           <View style={styles.chatContainer}>
             <Image source={item.photos} style={styles.image}/>
+            <View style={styles.chatContent}>
+              <View style={styles.chatHeader}>
+                <Text style={styles.chatName}>{item.name}</Text>
+                <Text style={styles.chatTime}>{item.time}</Text>
+              </View>
+              <View style={styles.messages}>
+                <Text 
+                  style={styles.chatMessage}
+                  numberOfLines={1}
+                >
+                  {item.lastMessage}
+                </Text>
+              </View>
+            </View>
           </View>
         )}
       />
@@ -31,8 +45,41 @@ export default Chat
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 16,
   },
+  chatContainer:{
+    flexDirection: 'row',
+    marginRight:16,
+    marginLeft:16
+  },
+  image:{
+    width:50,
+    height:50,
+    backgroundColor:'#128c7e',
+    borderRadius: 25,
+    alignItems:'center',
+    justifyContent: 'center'
+  },
+  chatContent: {
+    flex:5,
+    borderBottomWidth:0,
+    marginLeft:16,
+    paddingBottom:16,
+    marginBottom:13
+  },
+  chatHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 2,
+    marginTop: 4
+  },
+  chatName:{
+    fontSize:16,
+    fontWeight: 'bold'
+  },
+  chatTime: {
+    fontSize: 12,
+    color: '#a0a09e'
+  }
 });
