@@ -2,7 +2,7 @@ const DATA = [
     {
         "id": 1,
         "name": 'Ravindu',
-        "photos": require('../../assets/flower.png'),
+        "photos": require('C:\Users\Insight\Pictures\ry.png'),
         "lastMessage": "I'm Ravindu",
         "time": "10:00 AM",
         "totalUnread": 2
