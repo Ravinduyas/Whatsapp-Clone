@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 20,
-    color: '#cff',
+    color: '#ccc',
     fontWeight: '500'
   },
   iconContainer: {

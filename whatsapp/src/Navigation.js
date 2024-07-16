@@ -31,6 +31,12 @@ const Navigation = () => {
       <Tab.Screen
         name='Community'
         component={Community}
+        options={{
+          tabBarIcon: ({ color }) => {
+            <MaterialCommunityIcons name='account-group' size={24} color={color} />
+          },
+          tabBarLabelStyle: styles.tabBarLabelStyle
+        }}
       />
       <Tab.Screen
         name='Chat'
@@ -51,10 +57,8 @@ const Navigation = () => {
 export default Navigation
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  tabBarLabel: {
+    display: 'none',
+    backgroundColor: 'yellow'
+  }
 });
